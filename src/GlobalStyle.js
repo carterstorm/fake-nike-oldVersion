@@ -9,4 +9,10 @@ export const GlobalStyles = createGlobalStyle`
     *, ::after, ::before {
         box-sizing: inherit;
     }
+
+    .body {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
 `;
