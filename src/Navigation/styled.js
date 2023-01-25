@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Navigation = styled.nav`
+export const StyledNavigation = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,21 +14,21 @@ export const Logo = styled.a`
     cursor: pointer;
 `;
 
-export const NavigationList = styled.ul`
+export const List = styled.ul`
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 `;
 
-export const NavigationItem = styled.li`
+export const Item = styled.li`
     display: flex;
     justify-content: center;
     min-width: 125px;
     border-right: ${({ last }) => last ? "" : "1px solid black"};
 `;
 
-export const NavigationItemLink = styled.a`
+export const ItemLink = styled.a`
     cursor: pointer;
 `;
 
@@ -39,7 +39,7 @@ export const NavigationSection = styled.div`
     margin: 0 30px 0 0;
 `;
 
-export const ClientSection = styled.div`
+export const Client = styled.div`
     margin-right: 30px;
 `;
 

@@ -1,7 +1,8 @@
-import { HomePage } from "../features/HomePage";
+import { HashRouter } from "react-router-dom";
+import { Navigation } from "../Navigation";
 
 export const App = () => (
-  <>
-    <HomePage />
-  </>
+  <HashRouter>
+    <Navigation />
+  </HashRouter>
 )
