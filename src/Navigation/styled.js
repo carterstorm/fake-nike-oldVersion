@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledNavigation = styled.nav`
@@ -28,8 +29,10 @@ export const Item = styled.li`
     border-right: ${({ last }) => last ? "" : "1px solid black"};
 `;
 
-export const ItemLink = styled.a`
+export const StyledNavLink = styled(NavLink)`
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 `;
 
 export const NavigationSection = styled.div`

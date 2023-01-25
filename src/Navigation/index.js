@@ -1,3 +1,4 @@
+import { Redirect, Route, Switch } from "react-router-dom";
 import {
     StyledNavigation,
     Logo,
@@ -6,7 +7,7 @@ import {
     Client,
     LanguageButton,
     NavigationSection,
-    ItemLink,
+    StyledNavLink,
     Languages,
     UserOption
 } from "./styled";
@@ -19,13 +20,13 @@ export const Navigation = () => {
 
             <List>
                 <Item>
-                    <ItemLink>Kobiety</ItemLink>
+                    <StyledNavLink to={'/women'}>Kobiety</StyledNavLink>
                 </Item>
                 <Item>
-                    <ItemLink>Mężczyźni</ItemLink>
+                    <StyledNavLink to={'/men'}>Mężczyźni</StyledNavLink>
                 </Item>
                 <Item last>
-                    <ItemLink>Dzieci</ItemLink>
+                    <StyledNavLink to={'/kids'}>Dzieci</StyledNavLink>
                 </Item>
             </List>
 
@@ -40,6 +41,12 @@ export const Navigation = () => {
                 </Languages>
             </NavigationSection>
 
-        </StyledNavigation>
+            <Switch>
+                <Route path="/">
+                    <Redirect to={"/homePage"} />
+                </Route>
+            </Switch>
+
+        </StyledNavigation >
     )
 };
