@@ -1,4 +1,5 @@
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+import { HomePage } from "../features/HomePage";
 import {
     StyledNavigation,
     Logo,
@@ -14,39 +15,54 @@ import {
 
 export const Navigation = () => {
     return (
-        <StyledNavigation>
+        <>
+            <StyledNavigation>
+                <Logo>#lumpShop.</Logo>
+                <List>
+                    <Item>
+                        <StyledNavLink to={'/homepage'}>Home</StyledNavLink>
+                    </Item>
+                    <Item>
+                        <StyledNavLink to={'/women'}>Kobiety</StyledNavLink>
+                    </Item>
+                    <Item>
+                        <StyledNavLink to={'/men'}>Mężczyźni</StyledNavLink>
+                    </Item>
+                    <Item last>
+                        <StyledNavLink to={'/kids'}>Dzieci</StyledNavLink>
+                    </Item>
+                </List>
 
-            <Logo>#lumpShop.</Logo>
-
-            <List>
-                <Item>
-                    <StyledNavLink to={'/women'}>Kobiety</StyledNavLink>
-                </Item>
-                <Item>
-                    <StyledNavLink to={'/men'}>Mężczyźni</StyledNavLink>
-                </Item>
-                <Item last>
-                    <StyledNavLink to={'/kids'}>Dzieci</StyledNavLink>
-                </Item>
-            </List>
-
-            <NavigationSection>
-                <Client>
-                    <UserOption>Logowanie</UserOption>
-                    <UserOption>Rejestracja</UserOption>
-                </Client>
-                <Languages>
-                    <LanguageButton>EN</LanguageButton>
-                    <LanguageButton last>PL</LanguageButton>
-                </Languages>
-            </NavigationSection>
+                <NavigationSection>
+                    <Client>
+                        <UserOption>Logowanie</UserOption>
+                        <UserOption>Rejestracja</UserOption>
+                    </Client>
+                    <Languages>
+                        <LanguageButton>EN</LanguageButton>
+                        <LanguageButton last>PL</LanguageButton>
+                    </Languages>
+                </NavigationSection>
+            </StyledNavigation >
 
             <Switch>
-                <Route path="/">
-                    <Redirect to={"/homePage"} />
+                <Route path={"/homepage"}>
+                    <HomePage />
                 </Route>
-            </Switch>
+                <Route path={"/women"}>
 
-        </StyledNavigation >
+                </Route>
+                <Route path={"/men"}>
+
+                </Route>
+                <Route path={"/kids"}>
+
+                </Route>
+                <Route path="/">
+                    <Redirect to={"/homepage"} />
+                </Route>
+
+            </Switch>
+        </>
     )
 };
