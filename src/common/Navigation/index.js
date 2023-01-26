@@ -1,5 +1,6 @@
 import { Route, Switch, Redirect } from "react-router-dom";
-import { HomePage } from "../features/HomePage";
+import { HomePage } from "../../features/HomePage";
+import { Announcment } from "../../common/Announcment";
 import {
     StyledNavigation,
     Logo,
@@ -44,6 +45,8 @@ export const Navigation = () => {
                     </Languages>
                 </NavigationSection>
             </StyledNavigation >
+
+            <Announcment />
 
             <Switch>
                 <Route path={"/homepage"}>

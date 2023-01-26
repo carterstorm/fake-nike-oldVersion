@@ -25,7 +25,7 @@ export const List = styled.ul`
 export const Item = styled.li`
     display: flex;
     justify-content: center;
-    min-width: 125px;
+    min-width: 100px;
     border-right: ${({ last }) => last ? "" : "1px solid black"};
 `;
 
@@ -48,7 +48,7 @@ export const Client = styled.div`
 
 export const UserOption = styled.a`
     cursor: pointer;
-    margin: 0 15px;
+    margin: 0 10px;
 `;
 
 export const Languages = styled.div`
