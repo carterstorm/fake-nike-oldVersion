@@ -8,7 +8,8 @@ export const StyledNavigation = styled.nav`
     padding: 20px 0;
 `;
 
-export const Logo = styled.a`
+export const Logo = styled.h1`
+    margin: 0;
     padding: 0 0 0 30px;
     font-size: 30px;
     font-style: italic;
@@ -18,6 +19,7 @@ export const Logo = styled.a`
 export const List = styled.ul`
     display: flex;
     margin: 0;
+    margin-left: 150px;
     padding: 0;
     list-style: none;
 `;
