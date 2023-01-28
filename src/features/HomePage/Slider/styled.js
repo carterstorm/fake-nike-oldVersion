@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
     position: relative;
     height: 70vh;
     width: 100%;
@@ -18,4 +18,4 @@ export const Arrow = styled.div`
     border-radius: 50%;
     left: ${({ direction }) => direction === "left" && "20px"};
     right: ${({ direction }) => direction === "right" && "20px"};
-`
+`;

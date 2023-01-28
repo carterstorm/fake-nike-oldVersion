@@ -1,4 +1,4 @@
-import { Arrow, Container } from "./styled"
+import { Arrow, Container } from "./styled";
 
 export const Slider = () => {
     return (
