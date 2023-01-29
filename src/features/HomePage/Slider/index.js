@@ -1,4 +1,13 @@
-import { Arrow, Container } from "./styled";
+import { sliderData } from "../../../data/sliderData";
+
+import {
+    Arrow,
+    Container,
+    Wrapper,
+    Slide,
+    Image,
+    ImageContainer,
+} from "./styled";
 
 export const Slider = () => {
     return (
@@ -8,6 +17,15 @@ export const Slider = () => {
                     chevron_left
                 </span>
             </Arrow>
+            <Wrapper>
+                {sliderData.map(data => (
+                    <Slide key={data.id}>
+                        <ImageContainer>
+                            <Image src={data.image} />
+                        </ImageContainer>
+                    </Slide>
+                ))}
+            </Wrapper>
             <Arrow direction="right">
                 <span className="material-symbols-outlined">
                     chevron_right
