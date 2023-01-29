@@ -4,6 +4,7 @@ export const Container = styled.section`
     position: relative;
     display: flex;
     height: 65vh;
+    overflow: hidden;
 `;
 
 export const Arrow = styled.div`
