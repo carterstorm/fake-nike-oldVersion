@@ -5,9 +5,11 @@ export const sliderData = [
     {
         id: 1,
         image: FitnessGirl,
+        sliderName: "#running",
     },
     {
         id: 2,
         image: Cyclist,
+        sliderName: "#cycling",
     }
 ];
