@@ -6,7 +6,8 @@ import {
     Wrapper,
     Slide,
     Image,
-    ImageContainer,
+    SlideContainer,
+    Text,
 } from "./styled";
 
 export const Slider = () => {
@@ -20,9 +21,12 @@ export const Slider = () => {
             <Wrapper>
                 {sliderData.map(data => (
                     <Slide key={data.id}>
-                        <ImageContainer>
+                        <SlideContainer>
                             <Image src={data.image} />
-                        </ImageContainer>
+                            <Text position={data.id % 2 === 0 ? "right" : "left"}>
+                                {data.sliderName}
+                            </Text>
+                        </SlideContainer>
                     </Slide>
                 ))}
             </Wrapper>

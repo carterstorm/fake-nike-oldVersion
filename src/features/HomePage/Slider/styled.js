@@ -8,11 +8,12 @@ export const Container = styled.section`
 
 export const Arrow = styled.div`
     position: absolute;
+    z-index: 2;
     margin: auto;
     top: 0;
     bottom: 0;
-    left: ${({ direction }) => direction === "left" && "40px"};
-    right: ${({ direction }) => direction === "right" && "40px"};
+    left: ${({ direction }) => direction === "left" && "30px"};
+    right: ${({ direction }) => direction === "right" && "30px"};
     width: 35px;
     height: 35px;
     display: flex;
@@ -39,7 +40,8 @@ export const Slide = styled.div`
     width: 100vw;
 `;
 
-export const ImageContainer = styled.div`
+export const SlideContainer = styled.div`
+    position: relative;
     flex-grow: 1;
     height: 65vh;
     overflow: hidden;
@@ -47,4 +49,14 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
     width: 100%;
+`;
+
+export const Text = styled.p`
+    position: absolute;
+    top: 100px;
+    left: ${({ position }) => position === "left" && "250px"};
+    right: ${({ position }) => position === "right" && "300px"};
+    z-index: 1;
+    font-size: 40px;
+    margin: 0;
 `;
