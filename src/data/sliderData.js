@@ -11,5 +11,5 @@ export const sliderData = [
         id: 2,
         image: Cyclist,
         sliderName: "#cycling",
-    }
+    },
 ];
