@@ -34,7 +34,7 @@ export const Arrow = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     transform: translateX(${({ slideIndex }) => slideIndex * (-100)}vw);
-    transition: 1s;
+    transition: 1s ease;
 `;
 
 export const Slide = styled.div`
