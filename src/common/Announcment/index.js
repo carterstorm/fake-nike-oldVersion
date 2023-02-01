@@ -13,13 +13,17 @@ export const Announcment = () => {
     const [announcmentIndex, setAnnouncmentIndex] = useState(0);
 
     useEffect(() => {
-        setInterval(() => {
+        const intervalId = setInterval(() => {
             if (announcmentIndex === announcmentData.length - 1) {
                 setAnnouncmentIndex(0);
             } else {
                 setAnnouncmentIndex(announcmentIndex + 1);
             }
         }, 5 * 1000);
+
+        return () => {
+            clearInterval(intervalId);
+        }
     }, [announcmentIndex]);
 
     return (
