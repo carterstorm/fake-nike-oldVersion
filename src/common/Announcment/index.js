@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import {
     AnnouncmentContainer,
     AnnouncmentHeading,
@@ -5,9 +7,8 @@ import {
     StyledAnnouncment,
     Wrapper
 } from "./styled";
-import { announcmentData } from "../../data/announcmentData";
-import { useEffect, useState } from "react";
 
+import { announcmentData } from "../../data/announcmentData";
 
 export const Announcment = () => {
     const [announcmentIndex, setAnnouncmentIndex] = useState(0);
