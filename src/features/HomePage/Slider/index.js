@@ -13,6 +13,7 @@ import {
 } from "./styled";
 
 export const Slider = () => {
+
     const [slideIndex, setSlideIndex] = useState(0);
 
     const handleClick = (direction) => {
