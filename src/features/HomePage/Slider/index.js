@@ -1,8 +1,9 @@
 import { useState } from "react";
+
+import { Arrow } from "../../../common/Arrow";
 import { sliderData } from "../../../data/sliderData";
 
 import {
-    Arrow,
     Container,
     Wrapper,
     Slide,
@@ -24,28 +25,31 @@ export const Slider = () => {
 
     return (
         <Container>
-            <Arrow direction="left" onClick={() => handleClick("left")}>
-                <span className="material-symbols-outlined">
-                    chevron_left
-                </span>
-            </Arrow>
-            <Wrapper slideIndex={slideIndex}>
+            <Arrow
+                direction="left"
+                handleClick={handleClick}
+            />
+            <Wrapper
+                slideIndex={slideIndex}>
                 {sliderData.map(data => (
                     <Slide key={data.id}>
                         <SlideContainer>
-                            <Image src={data.image} />
-                            <Text position={data.id % 2 === 0 ? "right" : "left"}>
+                            <Image
+                                src={data.image}
+                            />
+                            <Text
+                                position={data.id % 2 === 0 ? "right" : "left"}
+                            >
                                 {data.sliderName}
                             </Text>
                         </SlideContainer>
                     </Slide>
                 ))}
             </Wrapper>
-            <Arrow direction="right" onClick={() => handleClick("right")}>
-                <span className="material-symbols-outlined">
-                    chevron_right
-                </span>
-            </Arrow>
+            <Arrow
+                direction="right"
+                handleClick={handleClick}
+            />
         </Container>
     )
 }
