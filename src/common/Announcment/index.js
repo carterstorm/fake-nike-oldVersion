@@ -30,7 +30,9 @@ export const Announcment = () => {
     return (
         <Wrapper>
             {announcmentData.map(data => (
-                <StyledAnnouncment key={data.id} announcmentIndex={announcmentIndex}>
+                <StyledAnnouncment
+                    key={data.id}
+                    announcmentIndex={announcmentIndex}>
                     <AnnouncmentContainer>
                         <AnnouncmentHeading>
                             {data.announcmentHeading}
