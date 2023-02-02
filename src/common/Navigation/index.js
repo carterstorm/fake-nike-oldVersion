@@ -21,16 +21,24 @@ export const Navigation = () => {
                 <Logo>#lumpShop.</Logo>
                 <List>
                     <Item>
-                        <StyledNavLink to={'/homepage'}>Home</StyledNavLink>
+                        <StyledNavLink
+                            to={'/homepage'}>Home
+                        </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink to={'/women'}>Kobiety</StyledNavLink>
+                        <StyledNavLink
+                            to={'/women'}>Kobiety
+                        </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink to={'/men'}>Mężczyźni</StyledNavLink>
+                        <StyledNavLink
+                            to={'/men'}>Mężczyźni
+                        </StyledNavLink>
                     </Item>
                     <Item last>
-                        <StyledNavLink to={'/kids'}>Dzieci</StyledNavLink>
+                        <StyledNavLink
+                            to={'/kids'}>Dzieci
+                        </StyledNavLink>
                     </Item>
                 </List>
 
@@ -41,7 +49,9 @@ export const Navigation = () => {
                     </Client>
                     <Languages>
                         <LanguageButton>EN</LanguageButton>
-                        <LanguageButton last>PL</LanguageButton>
+                        <LanguageButton
+                            last
+                        >PL</LanguageButton>
                     </Languages>
                 </NavigationSection>
             </StyledNavigation >
