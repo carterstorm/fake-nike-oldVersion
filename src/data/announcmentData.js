@@ -7,7 +7,7 @@ export const announcmentData = [
     {
         id: 2,
         announcmentHeading: "Kup dwa lub więcej za 25% mniej",
-        announcmentText: "Rabat członkowki na wybrane modele - składając zamówienie użyj kodu X2X2X2.",
+        announcmentText: "Rabat członkowski na wybrane modele - składając zamówienie użyj kodu X2X2X2.",
     },
     {
         id: 3,
