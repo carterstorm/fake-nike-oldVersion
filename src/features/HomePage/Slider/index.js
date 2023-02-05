@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import { Arrow } from "../../../common/Arrow";
-import { sliderData } from "../../../data/sliderData";
+import { useSliderData } from "../../../useSliderData";
 
 import {
     Container,
@@ -24,6 +23,8 @@ export const Slider = () => {
         }
     };
 
+    const sliderData = useSliderData();
+
     return (
         <Container>
             <Arrow
@@ -31,26 +32,30 @@ export const Slider = () => {
                 handleClick={handleClick}
             />
             <Wrapper
-                slideIndex={slideIndex}>
-                {sliderData.map(data => (
-                    <Slide key={data.id}>
-                        <SlideContainer>
-                            <Image
-                                src={data.image}
-                            />
-                            <Text
-                                position={data.id % 2 === 0 ? "right" : "left"}
-                            >
-                                {data.sliderName}
-                            </Text>
-                        </SlideContainer>
-                    </Slide>
-                ))}
+                slideIndex={slideIndex}
+            >
+                {sliderData.map(item => {
+                    const { id, image, sliderName } = item;
+                    return (
+                        <Slide key={id}>
+                            <SlideContainer>
+                                <Image
+                                    src={image}
+                                />
+                                <Text
+                                    position={id % 2 === 0 ? "right" : "left"}
+                                >
+                                    {sliderName}
+                                </Text>
+                            </SlideContainer>
+                        </Slide>
+                    );
+                })}
             </Wrapper>
             <Arrow
                 direction="right"
                 handleClick={handleClick}
             />
-        </Container>
+        </Container >
     )
 }
