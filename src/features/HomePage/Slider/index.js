@@ -14,6 +14,7 @@ import {
 export const Slider = () => {
 
     const [slideIndex, setSlideIndex] = useState(0);
+    const sliderData = useSliderData();
 
     const handleClick = (direction) => {
         if (direction === "left") {
@@ -22,8 +23,6 @@ export const Slider = () => {
             setSlideIndex(slideIndex < sliderData.length - 1 ? slideIndex + 1 : 0);
         }
     };
-
-    const sliderData = useSliderData();
 
     return (
         <Container>
