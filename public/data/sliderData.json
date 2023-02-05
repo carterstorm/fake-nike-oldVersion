@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "image": "https://img.freepik.com/darmowe-zdjecie/mlody-piekny-sportive-dziewczyna-szkolenia-o-wschodzie-slonca-nad-morzem_176420-6315.jpg?w=2000&t=st=1674922408~exp=1674923008~hmac=47c87b8321774cd4b6bbbea419bff63dcd8b424d75f8506761ba4b184c6fc48a",
+        "sliderName": "#running"
+    },
+    {
+        "id": 2,
+        "image": "https://img.freepik.com/darmowe-zdjecie/rowerzysta-w-sloneczny-dzien-podroz-przygoda-zdjecie_1150-7513.jpg?w=2000&t=st=1674922677~exp=1674923277~hmac=45aee303a6dba1ebccd5805643741bdb0b8b283b0152eb0176ab3f7fae188a19",
+        "sliderName": "#cycling"
+    }
+]
