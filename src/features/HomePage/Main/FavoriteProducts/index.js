@@ -3,6 +3,7 @@ import {
     FavoriteProduct,
     FavoriteProductDescription,
     FavoriteProductImage,
+    FavoriteProductNumber,
     FavoriteProductsList
 } from "./styled";
 
@@ -76,6 +77,7 @@ export const FavoriteProducts = () => {
             <FavoriteProductsList>
                 {imagesToDisplay.map(({ id, description, src }) => (
                     <FavoriteProduct key={id}>
+                        <FavoriteProductNumber>{id}/{images.length}</FavoriteProductNumber>
                         <FavoriteProductImage src={src} />
                         <FavoriteProductDescription>{description}</FavoriteProductDescription>
                     </FavoriteProduct>

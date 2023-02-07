@@ -20,8 +20,22 @@ export const FavoriteProductsList = styled.ul`
 `;
 
 export const FavoriteProduct = styled.li`
+    position: relative;
     display: flex;
     flex-direction: column;
+`;
+
+export const FavoriteProductNumber = styled.p`
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.5);
+    color: rgba(238, 238, 238, 0.9);
+    border-radius: 20px;
+    width: 50px;
 `;
 
 export const FavoriteProductImage = styled.img`
