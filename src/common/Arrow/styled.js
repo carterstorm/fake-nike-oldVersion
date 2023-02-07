@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledArrow = styled.div`
+export const StyledArrow = styled.button`
     position: absolute;
     z-index: 2;
     margin: auto;
