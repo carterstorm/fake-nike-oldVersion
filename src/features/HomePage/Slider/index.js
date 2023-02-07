@@ -18,9 +18,9 @@ export const Slider = () => {
 
     const handleClick = (direction) => {
         if (direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderData.length - 1);
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderData.images.length - 1);
         } else {
-            setSlideIndex(slideIndex < sliderData.length - 1 ? slideIndex + 1 : 0);
+            setSlideIndex(slideIndex < sliderData.images.length - 1 ? slideIndex + 1 : 0);
         }
     };
 
@@ -33,23 +33,21 @@ export const Slider = () => {
             <Wrapper
                 slideIndex={slideIndex}
             >
-                {sliderData.map(item => {
-                    const { id, image, sliderName } = item;
-                    return (
-                        <Slide key={id}>
-                            <SlideContainer>
-                                <Image
-                                    src={image}
-                                />
-                                <Text
-                                    position={id % 2 === 0 ? "right" : "left"}
-                                >
-                                    {sliderName}
-                                </Text>
-                            </SlideContainer>
-                        </Slide>
-                    );
-                })}
+                {sliderData.images.map(({ id, image, sliderName }) => (
+                    <Slide key={id}>
+                        <SlideContainer>
+                            <Image
+                                src={image}
+                            />
+
+                            <Text
+                                position={id % 2 === 0 ? "right" : "left"}
+                            >
+                                {sliderName}
+                            </Text>
+                        </SlideContainer>
+                    </Slide>
+                ))}
             </Wrapper>
             <Arrow
                 direction="right"
