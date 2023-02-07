@@ -23,7 +23,7 @@ export const useSliderData = () => {
                     state: "error",
                     images: [],
                 });
-            }
+            };
         };
         setTimeout(getSliderData, 0 * 1000);
     }, []);
