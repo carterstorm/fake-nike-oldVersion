@@ -18,6 +18,7 @@ export const StyledArrow = styled.button`
     border-radius: 50%;
     cursor: pointer;
     transition: .3;
+    border: none;
 
     &:hover {
         background-color: #eee;
