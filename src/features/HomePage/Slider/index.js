@@ -17,9 +17,9 @@ export const Slider = () => {
 
     const handleClick = (direction) => {
         if (direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderData.images.length - 1);
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderData.data.length - 1);
         } else {
-            setSlideIndex(slideIndex < sliderData.images.length - 1 ? slideIndex + 1 : 0);
+            setSlideIndex(slideIndex < sliderData.data.length - 1 ? slideIndex + 1 : 0);
         }
     };
 
@@ -33,7 +33,7 @@ export const Slider = () => {
                 slideIndex={slideIndex}
             >
 
-                {sliderData.images.map(({ id, image, sliderName }) => (
+                {sliderData.data.map(({ id, image, sliderName }) => (
                     <Slide key={id}>
                         <Image
                             src={image}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export const useSliderData = () => {
     const [sliderData, setSliderData] = useState({
         state: "loading",
-        images: [],
+        data: [],
     });
 
     useEffect(() => {
@@ -15,13 +15,13 @@ export const useSliderData = () => {
 
                 setSliderData({
                     state: "success",
-                    images: data,
+                    data: data,
                 });
 
             } catch (error) {
                 setSliderData({
                     state: "error",
-                    images: [],
+                    data: [],
                 });
             };
         };
