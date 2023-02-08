@@ -7,7 +7,6 @@ import {
     Wrapper,
     Slide,
     Image,
-    SlideContainer,
     Text,
 } from "./styled";
 
@@ -33,19 +32,17 @@ export const Slider = () => {
             <Wrapper
                 slideIndex={slideIndex}
             >
+
                 {sliderData.images.map(({ id, image, sliderName }) => (
                     <Slide key={id}>
-                        <SlideContainer>
-                            <Image
-                                src={image}
-                            />
-
-                            <Text
-                                position={id % 2 === 0 ? "right" : "left"}
-                            >
-                                {sliderName}
-                            </Text>
-                        </SlideContainer>
+                        <Image
+                            src={image}
+                        />
+                        <Text
+                            position={id % 2 === 0 ? "right" : "left"}
+                        >
+                            {sliderName}
+                        </Text>
                     </Slide>
                 ))}
             </Wrapper>
@@ -55,4 +52,4 @@ export const Slider = () => {
             />
         </Container >
     )
-}
+};
