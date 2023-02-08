@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    position: relative;
     display: flex;
-    height: 65vh;
     overflow: hidden;
+    position: relative;
 `;
 
 export const Wrapper = styled.div`
@@ -14,20 +13,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Slide = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100vw;
-`;
-
-export const SlideContainer = styled.div`
-    position: relative;
-    flex-grow: 1;
-    height: 65vh;
-    overflow: hidden;
+    
 `;
 
 export const Image = styled.img`
-    width: 100%;
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
 `;
 
 export const Text = styled.p`
