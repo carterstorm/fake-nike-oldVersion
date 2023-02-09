@@ -42,7 +42,7 @@ export const FavoriteProducts = () => {
         setTimeout(getFavoriteProducts, 0 * 1000);
     }, []);
 
-    const imagesToDisplay = [
+    const imagesToDisplay = () => [
         favoriteProducts.data[(currentIndex + favoriteProducts.data.length - 1) % favoriteProducts.data.length],
         favoriteProducts.data[currentIndex],
         favoriteProducts.data[(currentIndex + 1) % favoriteProducts.data.length],
@@ -75,7 +75,7 @@ export const FavoriteProducts = () => {
                 handleClick={handlePrevClick}
             />
             <FavoriteProductsList>
-                {imagesToDisplay.map((item) => {
+                {imagesToDisplay().map((item) => {
 
                     if (!item) return null;
 
