@@ -18,6 +18,7 @@ export const StyledArrow = styled.button`
     border-radius: 50%;
     cursor: pointer;
     transition: .3;
+    transform: translate(0,-50%);
     border: none;
 
     &:hover {
