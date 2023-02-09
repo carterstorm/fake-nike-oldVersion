@@ -79,11 +79,13 @@ export const FavoriteProducts = () => {
 
                     if (!item) return null;
 
+                    const { id, description, src } = item;
+
                     return (
-                        <FavoriteProduct key={item.id}>
-                            <FavoriteProductNumber>{item.id}/{favoriteProducts.data.length}</FavoriteProductNumber>
-                            <FavoriteProductImage src={item.src} />
-                            <FavoriteProductDescription>{item.description}</FavoriteProductDescription>
+                        <FavoriteProduct key={id}>
+                            <FavoriteProductNumber>{id}/{favoriteProducts.data.length}</FavoriteProductNumber>
+                            <FavoriteProductImage src={src} />
+                            <FavoriteProductDescription>{description}</FavoriteProductDescription>
                         </FavoriteProduct>
                     )
                 })}
