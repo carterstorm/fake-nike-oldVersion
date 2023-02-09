@@ -45,7 +45,11 @@ export const FavoriteProductImage = styled.img`
 `;
 
 export const FavoriteProductDescription = styled.h3`
-    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    margin: 0;
     padding: 0;
     font-weight: 400;
     font-size: 16px;

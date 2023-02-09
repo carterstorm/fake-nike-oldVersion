@@ -7,7 +7,7 @@ import {
     FavoriteProductDescription,
     FavoriteProductImage,
     FavoriteProductNumber,
-    FavoriteProductsList
+    FavoriteProductsList,
 } from "./styled";
 
 import { Arrow } from "../../../../common/Arrow";
@@ -79,16 +79,18 @@ export const FavoriteProducts = () => {
 
                     if (!item) return null;
 
-                    const { id, description, src } = item;
+                    const { id, src } = item;
 
                     return (
                         <FavoriteProduct key={id}>
-
                             <FavoriteProductImage src={src} />
-                            <FavoriteProductDescription>{description}</FavoriteProductDescription>
                         </FavoriteProduct>
                     )
                 })}
+                {favoriteProducts.data.length > 0 ? (
+                    <FavoriteProductDescription>{favoriteProducts.data[currentIndex].description}</FavoriteProductDescription>
+                ) : null}
+
             </FavoriteProductsList>
             <Arrow
                 direction="right"
@@ -96,4 +98,4 @@ export const FavoriteProducts = () => {
             />
         </Container >
     );
-};
+}
