@@ -12,7 +12,6 @@ import {
 
 import { Arrow } from "../../../../common/Arrow";
 
-
 export const FavoriteProducts = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,11 +42,11 @@ export const FavoriteProducts = () => {
     }, []);
 
     const imagesToDisplay = () => [
+        favoriteProducts.data[(currentIndex + favoriteProducts.data.length - 2) % favoriteProducts.data.length],
         favoriteProducts.data[(currentIndex + favoriteProducts.data.length - 1) % favoriteProducts.data.length],
         favoriteProducts.data[currentIndex],
         favoriteProducts.data[(currentIndex + 1) % favoriteProducts.data.length],
-        favoriteProducts.data[(currentIndex + 2) % favoriteProducts.data.length],
-        favoriteProducts.data[(currentIndex + 3) % favoriteProducts.data.length]
+        favoriteProducts.data[(currentIndex + 2) % favoriteProducts.data.length]
     ];
 
     const handlePrevClick = () => {
@@ -75,6 +74,7 @@ export const FavoriteProducts = () => {
                 handleClick={handlePrevClick}
             />
             <FavoriteProductsList>
+                <FavoriteProductNumber>{currentIndex + 1}/{favoriteProducts.data.length}</FavoriteProductNumber>
                 {imagesToDisplay().map((item) => {
 
                     if (!item) return null;
@@ -83,7 +83,7 @@ export const FavoriteProducts = () => {
 
                     return (
                         <FavoriteProduct key={id}>
-                            <FavoriteProductNumber>{id}/{favoriteProducts.data.length}</FavoriteProductNumber>
+
                             <FavoriteProductImage src={src} />
                             <FavoriteProductDescription>{description}</FavoriteProductDescription>
                         </FavoriteProduct>
