@@ -20,7 +20,6 @@ export const FavoriteProductsList = styled.ul`
 `;
 
 export const FavoriteProduct = styled.li`
-    position: relative;
     display: flex;
     flex-direction: column;
 `;
@@ -28,7 +27,7 @@ export const FavoriteProduct = styled.li`
 export const FavoriteProductNumber = styled.p`
     position: absolute;
     top: 20px;
-    right: 40px;
+    right: 38%;
     margin: 0;
     padding: 5px 0;
     text-align: center;
@@ -39,9 +38,9 @@ export const FavoriteProductNumber = styled.p`
 `;
 
 export const FavoriteProductImage = styled.img`
-    width: 500px;
-    height: 500px;
-    background-color: green;
+    width: 27vw;
+    height: 27vw;
+    object-fit: cover;
     border-radius: 15px;
 `;
 
