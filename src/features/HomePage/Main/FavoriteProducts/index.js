@@ -42,13 +42,14 @@ export const FavoriteProducts = () => {
     }, []);
 
     const favoriteProductsLength = favoriteProducts.data.length;
+    const favoriteProductsData = favoriteProducts.data;
 
     const imagesToDisplay = () => [
-        favoriteProducts.data[(currentIndex + favoriteProductsLength - 2) % favoriteProductsLength],
-        favoriteProducts.data[(currentIndex + favoriteProductsLength - 1) % favoriteProductsLength],
-        favoriteProducts.data[currentIndex],
-        favoriteProducts.data[(currentIndex + 1) % favoriteProductsLength],
-        favoriteProducts.data[(currentIndex + 2) % favoriteProductsLength]
+        favoriteProductsData[(currentIndex + favoriteProductsLength - 2) % favoriteProductsLength],
+        favoriteProductsData[(currentIndex + favoriteProductsLength - 1) % favoriteProductsLength],
+        favoriteProductsData[currentIndex],
+        favoriteProductsData[(currentIndex + 1) % favoriteProductsLength],
+        favoriteProductsData[(currentIndex + 2) % favoriteProductsLength]
     ];
 
     const handlePrevClick = () => {
@@ -90,7 +91,7 @@ export const FavoriteProducts = () => {
                     )
                 })}
                 {favoriteProductsLength > 0 ? (
-                    <FavoriteProductDescription>{favoriteProducts.data[currentIndex].description}</FavoriteProductDescription>
+                    <FavoriteProductDescription>{favoriteProductsData[currentIndex].description}</FavoriteProductDescription>
                 ) : null}
 
             </FavoriteProductsList>
