@@ -16,12 +16,11 @@ export const FavoriteProductsList = styled.ul`
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 30px 0;
 `;
 
 export const FavoriteProduct = styled.li`
-    display: flex;
-    flex-direction: column;
+
 `;
 
 export const FavoriteProductNumber = styled.p`
@@ -41,14 +40,14 @@ export const FavoriteProductImage = styled.img`
     width: 27vw;
     height: 27vw;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 `;
 
 export const FavoriteProductDescription = styled.h3`
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, 25%);
     margin: 0;
     padding: 0;
     font-weight: 400;
