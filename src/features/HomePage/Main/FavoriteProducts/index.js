@@ -41,18 +41,20 @@ export const FavoriteProducts = () => {
         setTimeout(getFavoriteProducts, 0 * 1000);
     }, []);
 
+    const favoriteProductsLength = favoriteProducts.data.length;
+
     const imagesToDisplay = () => [
-        favoriteProducts.data[(currentIndex + favoriteProducts.data.length - 2) % favoriteProducts.data.length],
-        favoriteProducts.data[(currentIndex + favoriteProducts.data.length - 1) % favoriteProducts.data.length],
+        favoriteProducts.data[(currentIndex + favoriteProductsLength - 2) % favoriteProductsLength],
+        favoriteProducts.data[(currentIndex + favoriteProductsLength - 1) % favoriteProductsLength],
         favoriteProducts.data[currentIndex],
-        favoriteProducts.data[(currentIndex + 1) % favoriteProducts.data.length],
-        favoriteProducts.data[(currentIndex + 2) % favoriteProducts.data.length]
+        favoriteProducts.data[(currentIndex + 1) % favoriteProductsLength],
+        favoriteProducts.data[(currentIndex + 2) % favoriteProductsLength]
     ];
 
     const handlePrevClick = () => {
         const newIndex = currentIndex - 1;
         if (newIndex < 0) {
-            setCurrentIndex(favoriteProducts.data.length - 1);
+            setCurrentIndex(favoriteProductsLength - 1);
         } else {
             setCurrentIndex(newIndex);
         }
@@ -60,7 +62,7 @@ export const FavoriteProducts = () => {
 
     const handleNextClick = () => {
         const newIndex = currentIndex + 1;
-        if (newIndex === favoriteProducts.data.length) {
+        if (newIndex === favoriteProductsLength) {
             setCurrentIndex(0);
         } else {
             setCurrentIndex(newIndex);
@@ -74,7 +76,7 @@ export const FavoriteProducts = () => {
                 handleClick={handlePrevClick}
             />
             <FavoriteProductsList>
-                <FavoriteProductNumber>{currentIndex + 1}/{favoriteProducts.data.length}</FavoriteProductNumber>
+                <FavoriteProductNumber>{currentIndex + 1}/{favoriteProductsLength}</FavoriteProductNumber>
                 {imagesToDisplay().map((item) => {
 
                     if (!item) return null;
@@ -87,7 +89,7 @@ export const FavoriteProducts = () => {
                         </FavoriteProduct>
                     )
                 })}
-                {favoriteProducts.data.length > 0 ? (
+                {favoriteProductsLength > 0 ? (
                     <FavoriteProductDescription>{favoriteProducts.data[currentIndex].description}</FavoriteProductDescription>
                 ) : null}
 
@@ -98,4 +100,4 @@ export const FavoriteProducts = () => {
             />
         </Container >
     );
-}
+};
