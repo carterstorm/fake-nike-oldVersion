@@ -1,32 +1,32 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export const useSliderData = () => {
-    const [sliderData, setSliderData] = useState({
+export const useData = () => {
+    const [data, setData] = useState({
         state: "loading",
-        data: [],
+        fetchData: [],
     });
 
     useEffect(() => {
-        const getSliderData = async () => {
+        const getData = async () => {
             try {
                 const response = await axios.get("./data/sliderData.json");
                 const data = response.data;
 
-                setSliderData({
+                setData({
                     state: "success",
-                    data: data,
+                    fetchData: data,
                 });
 
             } catch (error) {
-                setSliderData({
+                setData({
                     state: "error",
-                    data: [],
+                    fetchData: [],
                 });
             };
         };
-        setTimeout(getSliderData, 0 * 1000);
+        setTimeout(getData, 0 * 1000);
     }, []);
 
-    return sliderData;
+    return data;
 };
