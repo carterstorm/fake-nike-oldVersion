@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     position: relative;
+    top: 0;
+    left: 0;
     overflow: hidden;
 `;
 
@@ -16,7 +18,7 @@ export const FavoriteProductsList = styled.ul`
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
     margin: 0;
-    padding: 0 0 30px 0;
+    padding: 0;
 `;
 
 export const FavoriteProduct = styled.li`
