@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     align-items: center;
     height: 80px;
     background-color: #eee;
+    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; 
     overflow: hidden;
 `;
