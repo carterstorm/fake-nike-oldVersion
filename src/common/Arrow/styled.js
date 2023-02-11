@@ -13,7 +13,7 @@ export const StyledArrow = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ddd;
+    background-color: ${({ theme }) => theme.colors.gray};
     opacity: .5;
     border-radius: 50%;
     cursor: pointer;
@@ -22,6 +22,6 @@ export const StyledArrow = styled.button`
     border: none;
 
     &:hover {
-        background-color: #eee;
+        background-color: ${({ theme }) => theme.colors.lightGray};
     }
 `;

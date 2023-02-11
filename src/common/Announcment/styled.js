@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     height: 80px;
-    background-color: #eee;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd; 
+    background-color: ${({ theme }) => theme.colors.lightGray};
+    border-top: 1px solid ${({ theme }) => theme.colors.gray};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.gray}; 
     overflow: hidden;
 `;
 

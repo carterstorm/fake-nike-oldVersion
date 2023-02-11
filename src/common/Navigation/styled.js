@@ -34,7 +34,7 @@ export const Item = styled.li`
 export const StyledNavLink = styled(NavLink)`
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: ${({ theme }) => theme.colors.black};
 `;
 
 export const NavigationSection = styled.div`
