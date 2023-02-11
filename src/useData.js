@@ -18,7 +18,7 @@ export const useData = () => {
                     fetchData: data,
                 });
 
-            } catch (error) {
+            } catch {
                 setData({
                     state: "error",
                     fetchData: [],
