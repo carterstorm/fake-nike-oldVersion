@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Arrow } from "../../../common/Arrow";
-import { useData } from "../../../useSliderData";
+import { useData } from "../../../useData";
 
 import {
     Container,
