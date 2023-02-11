@@ -72,7 +72,7 @@ export const FavoriteProducts = () => {
                     <FavoriteProductDescription>
                         {favoriteProductsData[currentIndex].description}
                     </FavoriteProductDescription>
-                ) : null};
+                ) : null}
 
             </FavoriteProductsList>
             <Arrow
