@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Arrow } from "../../../common/Arrow";
-import { useSliderData } from "../../../useSliderData";
+import { useData } from "../../../useSliderData";
 
 import {
     Container,
@@ -13,13 +13,14 @@ import {
 export const Slider = () => {
 
     const [slideIndex, setSlideIndex] = useState(0);
-    const sliderData = useSliderData();
+    const data = useData();
+    const fetchDataLength = data.fetchData.length;
 
     const handleClick = (direction) => {
         if (direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderData.data.length - 1);
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : fetchDataLength - 1);
         } else {
-            setSlideIndex(slideIndex < sliderData.data.length - 1 ? slideIndex + 1 : 0);
+            setSlideIndex(slideIndex < fetchDataLength - 1 ? slideIndex + 1 : 0);
         }
     };
 
@@ -33,7 +34,7 @@ export const Slider = () => {
                 slideIndex={slideIndex}
             >
 
-                {sliderData.data.map(({ id, image, sliderName }) => (
+                {data.fetchData.map(({ id, image, sliderName }) => (
                     <Slide key={id}>
                         <Image
                             src={image}
