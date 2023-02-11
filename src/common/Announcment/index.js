@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useData } from "../../useData";
 
 import {
     AnnouncmentContainer,
@@ -8,14 +9,14 @@ import {
     Wrapper
 } from "./styled";
 
-import { announcmentData } from "../../data/announcmentData";
-
 export const Announcment = () => {
     const [announcmentIndex, setAnnouncmentIndex] = useState(0);
+    const announcmentEndPoint = "./data/announcmentData.json";
+    const data = useData(announcmentEndPoint);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            if (announcmentIndex === announcmentData.length - 1) {
+            if (announcmentIndex === data.fetchData.length - 1) {
                 setAnnouncmentIndex(0);
             } else {
                 setAnnouncmentIndex(announcmentIndex + 1);
@@ -25,11 +26,11 @@ export const Announcment = () => {
         return () => {
             clearInterval(intervalId);
         }
-    }, [announcmentIndex]);
+    }, [announcmentIndex, data]);
 
     return (
         <Wrapper>
-            {announcmentData.map(data => (
+            {data.fetchData.map(data => (
                 <StyledAnnouncment
                     key={data.id}
                     announcmentIndex={announcmentIndex}>
