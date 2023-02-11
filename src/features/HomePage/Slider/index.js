@@ -11,9 +11,9 @@ import {
 } from "./styled";
 
 export const Slider = () => {
-
+    const sliderEndPoint = "./data/sliderData.json";
     const [slideIndex, setSlideIndex] = useState(0);
-    const data = useData();
+    const data = useData(sliderEndPoint);
     const fetchDataLength = data.fetchData.length;
 
     const handleClick = (direction) => {

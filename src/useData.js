@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export const useData = () => {
+export const useData = (endPoint) => {
     const [data, setData] = useState({
         state: "loading",
         fetchData: [],
@@ -10,7 +10,7 @@ export const useData = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get("./data/sliderData.json");
+                const response = await axios.get(endPoint);
                 const data = response.data;
 
                 setData({
@@ -26,7 +26,7 @@ export const useData = () => {
             };
         };
         setTimeout(getData, 0 * 1000);
-    }, []);
+    }, [endPoint]);
 
     return data;
 };
