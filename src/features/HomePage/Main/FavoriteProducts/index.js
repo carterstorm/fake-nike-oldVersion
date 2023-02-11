@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 
 import {
     Container,
@@ -11,38 +10,16 @@ import {
 } from "./styled";
 
 import { Arrow } from "../../../../common/Arrow";
+import { useData } from "../../../../useData";
 
 export const FavoriteProducts = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const favoriteProductsEndPoint = "./data/favoriteProducts.json";
+    const data = useData(favoriteProductsEndPoint);
 
-    const [favoriteProducts, setFavoriteProducts] = useState({
-        state: "loading",
-        data: [],
-    });
-
-    useEffect(() => {
-        const getFavoriteProducts = async () => {
-            try {
-                const response = await axios.get("./data/favoriteProducts.json");
-                const data = response.data;
-
-                setFavoriteProducts({
-                    state: "success",
-                    data: data,
-                });
-            } catch (error) {
-                setFavoriteProducts({
-                    state: "error",
-                    data: [],
-                });
-            }
-        };
-        setTimeout(getFavoriteProducts, 0 * 1000);
-    }, []);
-
-    const favoriteProductsLength = favoriteProducts.data.length;
-    const favoriteProductsData = favoriteProducts.data;
+    const favoriteProductsLength = data.fetchData.length;
+    const favoriteProductsData = data.fetchData;
 
     const imagesToDisplay = () => [
         favoriteProductsData[(currentIndex + favoriteProductsLength - 2) % favoriteProductsLength],
@@ -90,12 +67,12 @@ export const FavoriteProducts = () => {
                             <FavoriteProductImage src={src} />
                         </FavoriteProduct>
                     )
-                })}
+                })};
                 {favoriteProductsLength > 0 ? (
                     <FavoriteProductDescription>
                         {favoriteProductsData[currentIndex].description}
                     </FavoriteProductDescription>
-                ) : null}
+                ) : null};
 
             </FavoriteProductsList>
             <Arrow
