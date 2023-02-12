@@ -36,7 +36,7 @@ export const PopularProducts = () => {
                                     <Category>{category}</Category>
                                 </Description>
                                 <PriceContainer>
-                                    <Price>{price}zł</Price>
+                                    <Price>{price} zł</Price>
                                 </PriceContainer>
                             </ProductContainer>
                         </Link>
