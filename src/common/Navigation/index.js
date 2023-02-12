@@ -18,7 +18,7 @@ export const Navigation = () => {
     return (
         <>
             <StyledNavigation>
-                <Logo>#lumpShop.</Logo>
+                <Logo>#fake_nike.</Logo>
                 <List>
                     <Item>
                         <StyledNavLink
