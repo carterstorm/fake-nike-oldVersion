@@ -5,6 +5,11 @@ export const Container = styled.section`
     top: 0;
     left: 0;
     overflow: hidden;
+    margin: 0 auto;
+
+    @media (max-width: 1300px) {
+        width: 95%;
+    }
 `;
 
 export const FavoriteProductsList = styled.ul`
@@ -39,8 +44,8 @@ export const FavoriteProductNumber = styled.p`
 `;
 
 export const FavoriteProductImage = styled.img`
-    width: 22vw;
-    height: 22vw;
+    width: 23vw;
+    height: 23vw;
     object-fit: cover;
     border-radius: 10px;
 `;
