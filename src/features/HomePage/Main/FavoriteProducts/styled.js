@@ -30,7 +30,7 @@ export const FavoriteProduct = styled.li`
 
 `;
 
-export const FavoriteProductNumber = styled.p`
+export const FavoriteProductNumber = styled.span`
     position: absolute;
     top: 20px;
     right: 40%;

@@ -1,4 +1,18 @@
-import { Container, Heading, Image, ImageContainer, Item, List, ProductCategory, ProductDescription, ProductPrice, ProductTitle, Link } from "./styled";
+import {
+    Container,
+    Heading,
+    Image,
+    ImageContainer,
+    Item,
+    List,
+    Link,
+    Description,
+    ProductContainer,
+    Title,
+    Category,
+    PriceContainer,
+    Price
+} from "./styled";
 
 export const PopularProducts = () => {
     return (
@@ -11,14 +25,89 @@ export const PopularProducts = () => {
                             <Image src="https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                         </ImageContainer>
 
-                        <ProductDescription>
-                            <ProductTitle>Nike Zoom Flex</ProductTitle>
-                            <ProductCategory>Buty do biegania</ProductCategory>
-                        </ProductDescription>
-                        <ProductPrice>399,00 zł</ProductPrice>
+                        <ProductContainer>
+                            <Description>
+                                <Title>Nike Zoom Flex</Title>
+                                <Category>Buty do biegania</Category>
+                            </Description>
+                            <PriceContainer>
+                                <Price>399,00 zł</Price>
+                            </PriceContainer>
+                        </ProductContainer>
+                    </Link>
+                </Item>
+
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+
+                        <ProductContainer>
+                            <Description>
+                                <Title>Nike Zoom Flex</Title>
+                                <Category>Buty do biegania</Category>
+                            </Description>
+                            <PriceContainer>
+                                <Price>399,00 zł</Price>
+                            </PriceContainer>
+                        </ProductContainer>
+                    </Link>
+                </Item>
+
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+
+                        <ProductContainer>
+                            <Description>
+                                <Title>Nike Zoom Flex</Title>
+                                <Category>Buty do biegania</Category>
+                            </Description>
+                            <PriceContainer>
+                                <Price>399,00 zł</Price>
+                            </PriceContainer>
+                        </ProductContainer>
+                    </Link>
+                </Item>
+
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+
+                        <ProductContainer>
+                            <Description>
+                                <Title>Nike Zoom Flex</Title>
+                                <Category>Buty do biegania</Category>
+                            </Description>
+                            <PriceContainer>
+                                <Price>399,00 zł</Price>
+                            </PriceContainer>
+                        </ProductContainer>
+                    </Link>
+                </Item>
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+
+                        <ProductContainer>
+                            <Description>
+                                <Title>Nike Zoom Flex</Title>
+                                <Category>Buty do biegania</Category>
+                            </Description>
+                            <PriceContainer>
+                                <Price>399,00 zł</Price>
+                            </PriceContainer>
+                        </ProductContainer>
                     </Link>
                 </Item>
             </List>
-        </Container >
+        </Container>
     );
 };
