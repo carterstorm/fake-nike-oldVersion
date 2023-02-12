@@ -3,31 +3,31 @@
     {
           "id": 1,
           "description": "Ubrania do biegania",
-          "src": "https://images.pexels.com/photos/2346018/pexels-photo-2346018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image": "https://images.pexels.com/photos/2346018/pexels-photo-2346018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "source": "https://www.pexels.com/pl-pl/zdjecie/zdjecie-kobiety-biegnacej-na-drodze-2346018/"
       },
       {
           "id": 2,
           "description": "Kurtki",
-          "src": "https://cdn.pixabay.com/photo/2016/11/29/03/15/man-1867009_960_720.jpg",
+          "image": "https://cdn.pixabay.com/photo/2016/11/29/03/15/man-1867009_960_720.jpg",
           "source" : "https://pixabay.com/pl/photos/facet-plecy-widok-z-ty%c5%82u-1867009/"
       },
       {
           "id": 3,
           "description": "Legginsy do biegania",
-          "src": "https://images.pexels.com/photos/4194632/pexels-photo-4194632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image": "https://images.pexels.com/photos/4194632/pexels-photo-4194632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "source": "https://www.pexels.com/pl-pl/zdjecie/silna-sportsmenka-podnoszaca-kolana-podczas-treningu-4194632/"
       },
       {
           "id": 4,
           "description": "Spodenki",
-          "src": "https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image": "https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "source": "https://www.pexels.com/pl-pl/zdjecie/mezczyzna-ubrany-w-czarne-spodenki-2468344/"
       },
       {
           "id": 5,
           "description": "Koszulki",
-          "src": "https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "image": "https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           "source": "https://www.pexels.com/pl-pl/zdjecie/mezczyzna-sciana-siedzenie-szary-4925867/"
       }
   ]

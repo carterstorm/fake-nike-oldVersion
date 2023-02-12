@@ -60,11 +60,11 @@ export const FavoriteProducts = () => {
                 {imagesToDisplay().map((item) => {
 
                     if (!item) return null;
-                    const { id, src } = item;
+                    const { id, image } = item;
 
                     return (
                         <FavoriteProduct key={id}>
-                            <FavoriteProductImage src={src} />
+                            <FavoriteProductImage src={image} />
                         </FavoriteProduct>
                     )
                 })};
