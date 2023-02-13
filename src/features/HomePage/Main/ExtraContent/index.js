@@ -1,3 +1,4 @@
+import { useData } from "../../../../useData";
 import {
     Container,
     Heading,
@@ -12,45 +13,27 @@ import {
 } from "./styled";
 
 export const ExtraContent = () => {
+
+    const moreProductsEndPoint = "./data/moreProductsData.json";
+    const data = useData(moreProductsEndPoint);
+
     return (
         <Container>
             <Heading>Odkryj więcej produktów</Heading>
             <List>
-                <Item>
-                    <Link>
-                        <ImageContainer>
-                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        </ImageContainer>
-                        <LinksContainer>
-                            <MenuItem>Kobiety</MenuItem>
-                            <Stylization>Pokaż stylizację</Stylization>
-                        </LinksContainer>
-                    </Link>
-                </Item>
-
-                <Item>
-                    <Link>
-                        <ImageContainer>
-                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        </ImageContainer>
-                        <LinksContainer>
-                            <MenuItem>Kobiety</MenuItem>
-                            <Stylization>Pokaż stylizację</Stylization>
-                        </LinksContainer>
-                    </Link>
-                </Item>
-
-                <Item>
-                    <Link>
-                        <ImageContainer>
-                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        </ImageContainer>
-                        <LinksContainer>
-                            <MenuItem>Kobiety</MenuItem>
-                            <Stylization>Pokaż stylizację</Stylization>
-                        </LinksContainer>
-                    </Link>
-                </Item>
+                {data.fetchData.map(({ id, description, image }) => (
+                    <Item key={id}>
+                        <Link>
+                            <ImageContainer>
+                                <Image src={image} />
+                            </ImageContainer>
+                            <LinksContainer>
+                                <MenuItem>{description}</MenuItem>
+                                <Stylization>Pokaż stylizację</Stylization>
+                            </LinksContainer>
+                        </Link>
+                    </Item>
+                ))}
             </List>
         </Container>
     )

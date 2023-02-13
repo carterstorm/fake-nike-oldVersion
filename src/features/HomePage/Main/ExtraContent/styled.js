@@ -40,6 +40,7 @@ export const Image = styled.img`
     width: 100%;
     height: 35vw;
     object-fit: cover;
+    object-position: top;
 `;
 
 
