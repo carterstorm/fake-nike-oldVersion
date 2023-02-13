@@ -1,0 +1,18 @@
+
+[ 
+    {
+          "id": 1,
+          "description": "Kobiety",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_599,c_limit/9a814a72-fd10-4bbf-aa46-c07bc69a4d07/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 2,
+          "description": "Mężczyźni",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_599,c_limit/2e51f32f-442d-4416-8e81-d5fb49021fb6/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 3,
+          "description": "Dzieci",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_599,c_limit/9dd4d7ff-eac1-47e6-ae2b-ac84338f28c8/oficjalna-strona-internetowa-nike.jpg"
+      }
+  ]
