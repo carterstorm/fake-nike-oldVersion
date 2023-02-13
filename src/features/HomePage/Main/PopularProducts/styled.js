@@ -5,7 +5,7 @@ export const Container = styled.section`
     margin: 40px auto;
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h3`
     font-size: 24px;
     font-weight: 700;
     margin: 25px 0;
