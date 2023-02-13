@@ -2,13 +2,13 @@ import {
     Container,
     Heading,
     Image,
+    ImageContainer,
     Item,
     Link,
-    LinkContainer,
     LinksContainer,
     List,
     MenuItem,
-    Stylization
+    Stylization,
 } from "./styled";
 
 export const ExtraContent = () => {
@@ -18,13 +18,37 @@ export const ExtraContent = () => {
             <List>
                 <Item>
                     <Link>
-                        <LinkContainer>
-                            <Image />
-                            <LinksContainer>
-                                <MenuItem></MenuItem>
-                                <Stylization></Stylization>
-                            </LinksContainer>
-                        </LinkContainer>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+                        <LinksContainer>
+                            <MenuItem>Kobiety</MenuItem>
+                            <Stylization>Pokaż stylizację</Stylization>
+                        </LinksContainer>
+                    </Link>
+                </Item>
+
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+                        <LinksContainer>
+                            <MenuItem>Kobiety</MenuItem>
+                            <Stylization>Pokaż stylizację</Stylization>
+                        </LinksContainer>
+                    </Link>
+                </Item>
+
+                <Item>
+                    <Link>
+                        <ImageContainer>
+                            <Image src="https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </ImageContainer>
+                        <LinksContainer>
+                            <MenuItem>Kobiety</MenuItem>
+                            <Stylization>Pokaż stylizację</Stylization>
+                        </LinksContainer>
                     </Link>
                 </Item>
             </List>
