@@ -1,0 +1,43 @@
+
+[ 
+    {
+          "id": 1,
+          "sportName": "Bieganie",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/fdb002a1-90cf-48d8-91f2-104d90a9cf9e/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 2,
+          "sportName": "Piłka nożna",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/2fe0d082-fe6e-4168-99a4-53e21222bfde/oficjalna-strona-internetowa-nike.jpg"
+        },
+      {
+          "id": 3,
+          "sportName": "Koszykówka",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/7013c2e0-eb56-474d-aa15-def3605077b6/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 4,
+          "sportName": "Trening",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/d424aed1-6a57-4289-b75f-0408d2ddf699/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 5,
+          "sportName": "Tenis",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/cc77d75d-920a-4911-a54d-eb88fd33b6cd/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+        "id": 6,
+        "sportName": "Skateboarding",
+        "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/083b64b9-e3c2-48f7-9855-ad004de9ff57/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+        "id": 7,
+        "sportName": "Joga",
+        "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/93ac04c2-c05d-46ad-9397-a103fce28303/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+        "id": 8,
+        "sportName": "Taniec",
+        "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_441,c_limit/2567a2eb-cb4e-4902-a27a-056087e52cd1/oficjalna-strona-internetowa-nike.jpg"
+      }
+  ]
