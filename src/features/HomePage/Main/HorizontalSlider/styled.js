@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.section`
     width: 95%;
@@ -22,6 +22,14 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     margin-right: 20px;
+
+    ${({ last }) => last && css`
+        margin-right: 0;
+    `}
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const Link = styled.a`
@@ -64,4 +72,11 @@ export const PriceContainer = styled.div`
 
 export const Price = styled.span`
     font-weight: 700;
+`;
+
+export const SportName = styled.h4`
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
 `;
