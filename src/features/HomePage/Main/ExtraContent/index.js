@@ -35,6 +35,6 @@ export const ExtraContent = () => {
                     </Item>
                 ))}
             </List>
-        </Container>
+        </Container >
     )
 };

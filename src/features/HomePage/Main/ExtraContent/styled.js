@@ -15,6 +15,7 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: space-around;
     gap: 20px;
 `;
 
@@ -33,12 +34,10 @@ export const Link = styled.a`
 `;
 
 export const ImageContainer = styled.div`
-
 `;
 
 export const Image = styled.img`
-    width: 100%;
-    height: 35vw;
+    width: 31vw;
     object-fit: cover;
     object-position: top;
 `;
@@ -48,7 +47,7 @@ export const LinksContainer = styled.div`
     position: absolute;
     bottom: 60px;
     left: 0;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
