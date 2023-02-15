@@ -44,6 +44,10 @@ export const Image = styled.img`
     width: 31vw;
     height: 31vw;
     object-fit: cover;
+
+    ${({ size }) => size && css`
+        height: 22vw;
+    `}
 `;
 
 export const ProductContainer = styled.div`

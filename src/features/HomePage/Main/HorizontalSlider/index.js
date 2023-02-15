@@ -30,6 +30,7 @@ export const HorizontalSlider = ({ title, data }) => {
                                 <ImageContainer>
                                     <Image
                                         src={image}
+                                        size={sportName}
                                     />
                                 </ImageContainer>
                                 <ProductContainer>
