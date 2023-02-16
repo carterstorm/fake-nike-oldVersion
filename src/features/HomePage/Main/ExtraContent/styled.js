@@ -8,19 +8,18 @@ export const Container = styled.section`
 export const Heading = styled.h3`
     font-size: 24px;
     font-weight: 700;
-    margin: 25px 0;
 `;
 
 export const List = styled.ul`
     list-style: none;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
-    gap: 20px;
+    grid-gap: 20px;
 `;
 
 export const Item = styled.li`
-    flex-grow: 1;
 `;
 
 export const Link = styled.a`
@@ -34,10 +33,11 @@ export const Link = styled.a`
 `;
 
 export const ImageContainer = styled.div`
+
 `;
 
 export const Image = styled.img`
-    width: 31vw;
+    width: 100%;
     object-fit: cover;
     object-position: top;
 `;
@@ -47,10 +47,11 @@ export const LinksContainer = styled.div`
     position: absolute;
     bottom: 60px;
     left: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 `;
 
 export const MenuItem = styled.span`
