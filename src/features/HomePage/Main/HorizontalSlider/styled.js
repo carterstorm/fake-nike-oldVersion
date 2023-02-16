@@ -53,7 +53,7 @@ export const Image = styled.img`
 export const ProductContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 0 50px 0;
 `;
 
 export const Description = styled.div`
