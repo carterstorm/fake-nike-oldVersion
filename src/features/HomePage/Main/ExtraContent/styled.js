@@ -14,7 +14,7 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(${({ gridNumber }) => gridNumber}, 1fr);
     justify-content: space-around;
     grid-gap: 20px;
 `;
@@ -39,7 +39,7 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    height: ${({ height }) => height}px;
 `;
 
 
@@ -54,24 +54,34 @@ export const LinksContainer = styled.div`
     align-items: center;
 `;
 
-export const MenuItem = styled.span`
+export const Button = styled.span`
     background-color: #fff;
     padding: 10px 30px;
     border-radius: 20px;
-    margin: 5px 10px;
+    margin: 5px 0;
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.lightGray};
     }
 `;
 
-export const Stylization = styled.span`
-    background-color: #fff;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin: 5px 10px;
+export const TrainingContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+`;
 
-    &:hover {
-        background-color: ${({ theme }) => theme.colors.lightGray};
-    }
+export const Paragraph = styled.p`
+    display: flex;
+    justify-items: flex-end;
+    align-items: flex-end;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    height: 50px;
 `;

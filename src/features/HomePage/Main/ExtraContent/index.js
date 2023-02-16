@@ -1,5 +1,5 @@
-import { useData } from "../../../../useData";
 import {
+    Button,
     Container,
     Heading,
     Image,
@@ -8,29 +8,40 @@ import {
     Link,
     LinksContainer,
     List,
-    MenuItem,
-    Stylization,
+    Paragraph,
+    TrainingContainer,
 } from "./styled";
 
-export const ExtraContent = () => {
-
-    const moreProductsEndPoint = "./data/moreProductsData.json";
-    const data = useData(moreProductsEndPoint);
-
-    return (
+export const ExtraContent = ({ title, data }) => {
+    return !!data && (
         <Container>
-            <Heading>Odkryj więcej produktów</Heading>
-            <List>
-                {data.fetchData.map(({ id, description, image }) => (
+            <Heading>{title}</Heading>
+            <List gridNumber={data.fetchData.length}>
+                {data.fetchData.map(({ id, persons, image, paragraph, nikeButton }) => (
                     <Item key={id}>
                         <Link>
-                            <ImageContainer>
-                                <Image src={image} />
-                            </ImageContainer>
-                            <LinksContainer>
-                                <MenuItem>{description}</MenuItem>
-                                <Stylization>Pokaż stylizację</Stylization>
-                            </LinksContainer>
+                            {persons && (
+                                <>
+                                    <ImageContainer>
+                                        <Image src={image} />
+                                    </ImageContainer>
+                                    <LinksContainer>
+                                        <Button>{persons}</Button>
+                                        <Button>Pokaż stylizację</Button>
+                                    </LinksContainer>
+                                </>
+                            )}
+                            {nikeButton && (
+                                <>
+                                    <ImageContainer>
+                                        <Image src={image} height={300} />
+                                    </ImageContainer>
+                                    <TrainingContainer>
+                                        <Paragraph>{paragraph}</Paragraph>
+                                        <Button>{nikeButton}</Button>
+                                    </TrainingContainer>
+                                </>
+                            )}
                         </Link>
                     </Item>
                 ))}

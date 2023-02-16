@@ -12,12 +12,20 @@ export const Main = () => {
     const sportNameEndPoint = "./data/sportNameCategory.json";
     const searchBySportData = useData(sportNameEndPoint);
 
+    const moreProductsEndPoint = "./data/moreProductsData.json";
+    const moreProducts = useData(moreProductsEndPoint);
+
+    const trainingDataEndPoint = "./data/trainingData.json";
+    const trainingData = useData(trainingDataEndPoint);
+
+
     return (
         <StyledMain>
             <FavoriteProducts />
             <HorizontalSlider title={"Popularne w tym tygodniu"} data={popularData} />
-            <ExtraContent />
+            <ExtraContent title={"Odkryj więcej produktów"} data={moreProducts} />
             <HorizontalSlider title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
+            <ExtraContent title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
         </StyledMain>
     );
 };

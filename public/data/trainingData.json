@@ -1,0 +1,15 @@
+
+[ 
+    {
+          "id": 1,
+          "paragraph": "Monitorowanie biegów, wyzwania i biegi z autoprzewodnikiem",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_666,c_limit/5c04b0d1-7ef2-4d72-ae2a-5ba108513c3b/oficjalna-strona-internetowa-nike.jpg",
+          "nikeButton": "Nike run club"
+    },
+    {
+        "id": 2,
+        "paragraph": "Setki treningów, praca nad oddychaniem i nie tylko",
+        "image": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_666,c_limit/ee6a4150-40b2-4767-8628-e49ffaba34f2/oficjalna-strona-internetowa-nike.jpg",
+        "nikeButton": "Nike training club"
+    }
+]
