@@ -2,17 +2,18 @@ import { useState } from "react";
 
 import {
     Container,
-    FavoriteProduct,
-    FavoriteProductDescription,
-    FavoriteProductImage,
-    FavoriteProductNumber,
-    FavoriteProductsList,
+    Description,
+    Heading,
+    Image,
+    Item,
+    List,
+    Number,
 } from "./styled";
 
 import { Arrow } from "../../../../common/Arrow";
 import { useData } from "../../../../useData";
 
-export const FavoriteProducts = () => {
+export const ArrowSlider = ({ title }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const favoriteProductsEndPoint = "./data/favoriteProducts.json";
@@ -35,14 +36,17 @@ export const FavoriteProducts = () => {
 
     return (
         <Container>
+            {title && (
+                <Heading>{title}</Heading>
+            )}
             <Arrow
                 direction="left"
                 handleClick={handlePrevClick}
             />
-            <FavoriteProductsList>
-                <FavoriteProductNumber>
+            <List>
+                <Number>
                     {currentIndex + 1}/{favoriteProductsLength}
-                </FavoriteProductNumber>
+                </Number>
                 {imagesToDisplay().map((item) => {
 
                     if (!item) {
@@ -52,18 +56,18 @@ export const FavoriteProducts = () => {
                     const { id, image } = item;
 
                     return (
-                        <FavoriteProduct key={id}>
-                            <FavoriteProductImage src={image} />
-                        </FavoriteProduct>
+                        <Item key={id}>
+                            <Image src={image} />
+                        </Item>
                     )
                 })};
                 {favoriteProductsLength > 0 ? (
-                    <FavoriteProductDescription>
+                    <Description>
                         {favoriteProductsData[currentIndex].description}
-                    </FavoriteProductDescription>
+                    </Description>
                 ) : null}
 
-            </FavoriteProductsList>
+            </List>
             <Arrow
                 direction="right"
                 handleClick={handleNextClick}

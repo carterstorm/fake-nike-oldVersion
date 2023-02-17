@@ -14,7 +14,7 @@ export const Heading = styled.h3`
     font-weight: 700;
 `;
 
-export const FavoriteProductsList = styled.ul`
+export const List = styled.ul`
     position: relative;
     top: 50%;
     left: 50%;
@@ -28,11 +28,11 @@ export const FavoriteProductsList = styled.ul`
     padding: 0;
 `;
 
-export const FavoriteProduct = styled.li`
+export const Item = styled.li`
 
 `;
 
-export const FavoriteProductNumber = styled.span`
+export const Number = styled.span`
     position: absolute;
     top: 20px;
     right: 40%;
@@ -45,14 +45,14 @@ export const FavoriteProductNumber = styled.span`
     width: 50px;
 `;
 
-export const FavoriteProductImage = styled.img`
+export const Image = styled.img`
     width: 23vw;
     height: 23vw;
     object-fit: cover;
     border-radius: 10px;
 `;
 
-export const FavoriteProductDescription = styled.h3`
+export const Description = styled.h3`
     position: absolute;
     bottom: 10px;
     left: 50%;

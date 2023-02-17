@@ -1,6 +1,6 @@
 import { useData } from "../../../useData";
 import { ExtraContent } from "./ExtraContent";
-import { FavoriteProducts } from "./FavoriteProducts";
+import { ArrowSlider } from "./ArrowSlider";
 import { HorizontalSlider } from "./HorizontalSlider";
 import { StyledMain } from "./styled";
 
@@ -21,11 +21,12 @@ export const Main = () => {
 
     return (
         <StyledMain>
-            <FavoriteProducts />
+            <ArrowSlider />
             <HorizontalSlider title={"Popularne w tym tygodniu"} data={popularData} />
             <ExtraContent title={"Odkryj więcej produktów"} data={moreProducts} />
             <HorizontalSlider title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <ExtraContent title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
+            <ArrowSlider title={"Członkowstwo Nike"} />
         </StyledMain>
     );
 };
