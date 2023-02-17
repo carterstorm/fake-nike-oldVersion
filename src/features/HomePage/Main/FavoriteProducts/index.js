@@ -29,23 +29,9 @@ export const FavoriteProducts = () => {
         favoriteProductsData[(currentIndex + 2) % favoriteProductsLength]
     ];
 
-    const handlePrevClick = () => {
-        const newIndex = currentIndex - 1;
-        if (newIndex < 0) {
-            setCurrentIndex(favoriteProductsLength - 1);
-        } else {
-            setCurrentIndex(newIndex);
-        }
-    };
+    const handlePrevClick = () => { currentIndex - 1 < 0 ? setCurrentIndex(favoriteProductsLength - 1) : setCurrentIndex(currentIndex - 1) }
 
-    const handleNextClick = () => {
-        const newIndex = currentIndex + 1;
-        if (newIndex === favoriteProductsLength) {
-            setCurrentIndex(0);
-        } else {
-            setCurrentIndex(newIndex);
-        }
-    };
+    const handleNextClick = () => { currentIndex + 1 === favoriteProductsLength ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1) }
 
     return (
         <Container>
