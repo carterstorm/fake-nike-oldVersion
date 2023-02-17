@@ -17,16 +17,16 @@ export const Announcment = () => {
 
     return (
         <Wrapper>
-            {data.fetchData.map(data => (
+            {data.fetchData.map(({ id, announcmentHeading, announcmentText }) => (
                 <StyledAnnouncment
-                    key={data.id}
+                    key={id}
                     announcmentIndex={announcmentIndex}>
                     <AnnouncmentContainer>
                         <AnnouncmentHeading>
-                            {data.announcmentHeading}
+                            {announcmentHeading}
                         </AnnouncmentHeading>
                         <AnnouncmentText>
-                            {data.announcmentText}
+                            {announcmentText}
                         </AnnouncmentText>
                     </AnnouncmentContainer>
                 </StyledAnnouncment>
