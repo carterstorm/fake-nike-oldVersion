@@ -6,10 +6,12 @@ export const Container = styled.section`
     left: 0;
     overflow: hidden;
     margin: 0 auto;
+    width: 95%;
+`;
 
-    @media (max-width: 1300px) {
-        width: 95%;
-    }
+export const Heading = styled.h3`
+    font-size: 24px;
+    font-weight: 700;
 `;
 
 export const FavoriteProductsList = styled.ul`
