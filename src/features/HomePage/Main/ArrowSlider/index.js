@@ -2,16 +2,12 @@ import { useState } from "react";
 
 import {
     Container,
-    Description,
     Heading,
-    Image,
-    Item,
-    List,
-    Number,
 } from "./styled";
 
 import { Arrow } from "../../../../common/Arrow";
 import { useData } from "../../../../useData";
+import { SliderItems } from "./SliderItems";
 
 export const ArrowSlider = ({ title }) => {
 
@@ -43,31 +39,12 @@ export const ArrowSlider = ({ title }) => {
                 direction="left"
                 handleClick={handlePrevClick}
             />
-            <List>
-                <Number>
-                    {currentIndex + 1}/{favoriteProductsLength}
-                </Number>
-                {imagesToDisplay().map((item) => {
-
-                    if (!item) {
-                        return null;
-                    }
-
-                    const { id, image } = item;
-
-                    return (
-                        <Item key={id}>
-                            <Image src={image} />
-                        </Item>
-                    )
-                })};
-                {favoriteProductsLength > 0 ? (
-                    <Description>
-                        {favoriteProductsData[currentIndex].description}
-                    </Description>
-                ) : null}
-
-            </List>
+            <SliderItems
+                currentIndex={currentIndex}
+                favoriteProductsData={favoriteProductsData}
+                favoriteProductsLength={favoriteProductsLength}
+                imagesToDisplay={imagesToDisplay}
+            />
             <Arrow
                 direction="right"
                 handleClick={handleNextClick}
