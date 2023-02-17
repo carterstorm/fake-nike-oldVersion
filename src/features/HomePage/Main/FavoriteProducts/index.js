@@ -45,7 +45,10 @@ export const FavoriteProducts = () => {
                 </FavoriteProductNumber>
                 {imagesToDisplay().map((item) => {
 
-                    if (!item) return null;
+                    if (!item) {
+                        return null;
+                    }
+
                     const { id, image } = item;
 
                     return (
