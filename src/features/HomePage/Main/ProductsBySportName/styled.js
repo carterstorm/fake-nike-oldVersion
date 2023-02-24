@@ -50,32 +50,10 @@ export const Image = styled.img`
     `}
 `;
 
-export const ProductContainer = styled.div`
+export const Box = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 15px 0 30px 0;
-`;
-
-export const Description = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-export const Title = styled.h4`
-    margin: 0;
-    font-weight: 700;
-`;
-
-export const Category = styled.p`
-    margin: 5px 0 0 0;
-`;
-
-export const PriceContainer = styled.div`
-    margin-right: 15px;
-`;
-
-export const Price = styled.span`
-    font-weight: 700;
 `;
 
 export const SportName = styled.h4`

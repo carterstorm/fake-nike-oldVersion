@@ -1,8 +1,10 @@
 import { useData } from "../../../useData";
 import { ExtraContent } from "./ExtraContent";
 import { ArrowSlider } from "./ArrowSlider";
-import { HorizontalSlider } from "./HorizontalSlider";
 import { StyledMain } from "./styled";
+import { PopularProducts } from "./PopularProducts";
+import { ProductsBySportName } from "./ProductsBySportName";
+
 
 export const Main = () => {
 
@@ -22,9 +24,9 @@ export const Main = () => {
     return (
         <StyledMain>
             <ArrowSlider />
-            <HorizontalSlider title={"Popularne w tym tygodniu"} data={popularData} />
+            <PopularProducts title={"Popularne w tym tygodniu"} data={popularData} />
             <ExtraContent title={"Odkryj więcej produktów"} data={moreProducts} />
-            <HorizontalSlider title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
+            <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <ExtraContent title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
             <ArrowSlider title={"Członkowstwo Nike"} />
         </StyledMain>
