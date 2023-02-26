@@ -43,18 +43,6 @@ export const Image = styled.img`
     height: ${({ height }) => height}px;
 `;
 
-
-export const LinksContainer = styled.div`
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-`;
-
 export const Button = styled.span`
     background-color: #fff;
     padding: 10px 30px;
