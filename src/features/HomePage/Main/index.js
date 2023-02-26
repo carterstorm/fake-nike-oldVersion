@@ -1,5 +1,5 @@
 import { useData } from "../../../useData";
-import { ArrowSlider } from "./ArrowSlider";
+import { MainCategoriesSlider } from "./MainCategoriesSlider";
 import { StyledMain } from "./styled";
 import { PopularProducts } from "./PopularProducts";
 import { ProductsBySportName } from "./ProductsBySportName";
@@ -21,15 +21,17 @@ export const Main = () => {
     const trainingDataEndPoint = "./data/trainingData.json";
     const trainingData = useData(trainingDataEndPoint);
 
+    const favoriteProductsEndPoint = "./data/favoriteProducts.json";
+    const favoriteProducts = useData(favoriteProductsEndPoint);
 
     return (
         <StyledMain>
-            <ArrowSlider />
+            <MainCategoriesSlider data={favoriteProducts} />
             <PopularProducts title={"Popularne w tym tygodniu"} data={popularData} />
             <MoreProducts title={"Odkryj więcej produktów"} data={moreProducts} />
             <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <JoinToClub title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
-            <ArrowSlider title={"Członkowstwo Nike"} />
+            {/* <ArrowSlider title={"Członkowstwo Nike"} /> */}
         </StyledMain>
     );
 };
