@@ -43,8 +43,8 @@ export const MainCategoriesSlider = ({ title, data }) => {
             />
             <SliderItems
                 currentIndex={currentIndex}
-                favoriteProductsData={dataElements}
-                favoriteProductsLength={dataLength}
+                dataElements={dataElements}
+                dataLength={dataLength}
                 imagesToDisplay={imagesToDisplay}
             />
             <Arrow

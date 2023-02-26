@@ -1,10 +1,10 @@
 import { Description, Image, Item, List, Number } from "../styled";
 
-export const SliderItems = ({ currentIndex, favoriteProductsData, favoriteProductsLength, imagesToDisplay }) => {
+export const SliderItems = ({ currentIndex, dataElements, dataLength, imagesToDisplay }) => {
     return (
         <List>
             <Number>
-                {currentIndex + 1}/{favoriteProductsLength}
+                {currentIndex + 1}/{dataLength}
             </Number>
             {imagesToDisplay().map((item) => {
 
@@ -20,9 +20,9 @@ export const SliderItems = ({ currentIndex, favoriteProductsData, favoriteProduc
                     </Item>
                 )
             })};
-            {favoriteProductsLength > 0 ? (
+            {dataLength > 0 ? (
                 <Description>
-                    {favoriteProductsData[currentIndex].description}
+                    {dataElements[currentIndex].description}
                 </Description>
             ) : null}
 
