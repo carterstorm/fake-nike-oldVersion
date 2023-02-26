@@ -4,7 +4,7 @@ import { StyledMain } from "./styled";
 import { PopularProducts } from "./PopularProducts";
 import { ProductsBySportName } from "./ProductsBySportName";
 import { MoreProducts } from "./MoreProducts";
-import { JoinToClub } from "./JoinToClub";
+import { Training } from "./Training";
 
 
 export const Main = () => {
@@ -30,7 +30,7 @@ export const Main = () => {
             <PopularProducts title={"Popularne w tym tygodniu"} data={popularData} />
             <MoreProducts title={"Odkryj więcej produktów"} data={moreProducts} />
             <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
-            <JoinToClub title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
+            <Training title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
             {/* <ArrowSlider title={"Członkowstwo Nike"} /> */}
         </StyledMain>
     );

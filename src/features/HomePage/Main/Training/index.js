@@ -11,7 +11,7 @@ import {
     TrainingContainer,
 } from "./styled";
 
-export const JoinToClub = ({ title, data }) => {
+export const Training = ({ title, data }) => {
     return !!data && (
         <Container>
             <Heading>{title}</Heading>
