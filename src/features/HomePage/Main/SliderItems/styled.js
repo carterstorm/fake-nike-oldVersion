@@ -36,6 +36,7 @@ export const Image = styled.img`
     height: 23vw;
     object-fit: cover;
     border-radius: 10px;
+    border-radius: ${({ circle }) => circle && "50%"};
 `;
 
 export const Description = styled.h3`

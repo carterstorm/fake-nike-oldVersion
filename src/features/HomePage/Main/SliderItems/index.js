@@ -6,7 +6,7 @@ import {
     Number
 } from "./styled";
 
-export const SliderItems = ({ currentIndex, dataElements, dataLength, imagesToDisplay }) => {
+export const SliderItems = ({ currentIndex, dataElements, dataLength, imagesToDisplay, circle }) => {
     return (
         <List>
             <Number>
@@ -22,7 +22,10 @@ export const SliderItems = ({ currentIndex, dataElements, dataLength, imagesToDi
 
                 return (
                     <Item key={id}>
-                        <Image src={image} />
+                        <Image
+                            src={image}
+                            circle={circle}
+                        />
                     </Item>
                 )
             })};

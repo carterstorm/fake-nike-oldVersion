@@ -46,6 +46,7 @@ export const JoinToClub = ({ title, data }) => {
                 dataElements={dataElements}
                 dataLength={dataLength}
                 imagesToDisplay={imagesToDisplay}
+                circle={true}
             />
             <Arrow
                 direction="right"
