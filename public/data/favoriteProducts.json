@@ -3,31 +3,26 @@
     {
           "id": 1,
           "description": "Ubrania do biegania",
-          "image": "https://images.pexels.com/photos/2346018/pexels-photo-2346018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "source": "https://www.pexels.com/pl-pl/zdjecie/zdjecie-kobiety-biegnacej-na-drodze-2346018/"
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/68f7f042-6926-4425-b298-e14b033fedc7/oficjalna-strona-internetowa-nike.jpg"
       },
       {
           "id": 2,
           "description": "Kurtki",
-          "image": "https://cdn.pixabay.com/photo/2016/11/29/03/15/man-1867009_960_720.jpg",
-          "source" : "https://pixabay.com/pl/photos/facet-plecy-widok-z-ty%c5%82u-1867009/"
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/aa5512db-0ba9-4f20-92dd-ace2b121fe2a/oficjalna-strona-internetowa-nike.jpg"
       },
       {
           "id": 3,
           "description": "Legginsy do biegania",
-          "image": "https://images.pexels.com/photos/4194632/pexels-photo-4194632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "source": "https://www.pexels.com/pl-pl/zdjecie/silna-sportsmenka-podnoszaca-kolana-podczas-treningu-4194632/"
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/12ea9316-c3ee-44a0-8afc-5ae98e4d86f5/oficjalna-strona-internetowa-nike.jpg"
       },
       {
           "id": 4,
           "description": "Spodenki",
-          "image": "https://images.pexels.com/photos/2468344/pexels-photo-2468344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "source": "https://www.pexels.com/pl-pl/zdjecie/mezczyzna-ubrany-w-czarne-spodenki-2468344/"
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/ad52dda7-0566-4923-bc47-699d547bccbb/oficjalna-strona-internetowa-nike.jpg"
       },
       {
           "id": 5,
           "description": "Koszulki",
-          "image": "https://images.pexels.com/photos/4925867/pexels-photo-4925867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-          "source": "https://www.pexels.com/pl-pl/zdjecie/mezczyzna-sciana-siedzenie-szary-4925867/"
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/28c98169-9927-45bb-9634-41fa099d6782/oficjalna-strona-internetowa-nike.jpg"
       }
   ]
