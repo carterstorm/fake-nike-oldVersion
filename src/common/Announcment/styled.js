@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    height: 80px;
+    padding: 20px 0;
     background-color: ${({ theme }) => theme.colors.lightGray};
     border-top: 1px solid ${({ theme }) => theme.colors.gray};
     border-bottom: 1px solid ${({ theme }) => theme.colors.gray}; 
@@ -30,6 +30,6 @@ export const AnnouncmentHeading = styled.h2`
 `;
 
 export const AnnouncmentText = styled.p`
-    margin: 5px 0;
+    margin: 0;
     font-size: 14px;
 `;
