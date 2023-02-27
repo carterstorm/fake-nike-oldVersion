@@ -1,0 +1,27 @@
+[ 
+    {
+          "id": 1,
+          "description": "Uzyskaj dostęp do produktów członkowskich",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/4f700ed1-077a-4fc6-a0a5-0785ca781990/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 2,
+          "description": "Odblokuj nagrody dla członków i członkiń",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/0b27ed5f-61c1-4ce5-abc5-eca87c3e402f/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 3,
+          "description": "Uprawiaj sport i ciesz się dobrą kondycją",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/c4b075ad-32d3-4f0c-a1f4-ad89d2d7cb69/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 4,
+          "description": "Bierz udział w wydarzeniach dla członków i członkiń",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/f8f11081-1f83-46a4-b962-abacce445c22/oficjalna-strona-internetowa-nike.jpg"
+      },
+      {
+          "id": 5,
+          "description": "Więcej zalet członkowstwa",
+          "image": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_500,c_limit/3483aba6-6472-46b1-b637-1e1985b0238d/oficjalna-strona-internetowa-nike.jpg"
+      }
+  ]

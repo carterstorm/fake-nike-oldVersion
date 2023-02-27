@@ -25,6 +25,9 @@ export const Main = () => {
     const favoriteProductsEndPoint = "./data/favoriteProducts.json";
     const favoriteProducts = useData(favoriteProductsEndPoint);
 
+    const clubEndPoint = "./data/clubData.json";
+    const clubElements = useData(clubEndPoint);
+
     return (
         <StyledMain>
             <MainCategoriesSlider data={favoriteProducts} />
@@ -32,7 +35,7 @@ export const Main = () => {
             <MoreProducts title={"Odkryj więcej produktów"} data={moreProducts} />
             <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <Training title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
-            <JoinToClub title={"Członkowstwo Nike"} data={favoriteProducts} />
+            <JoinToClub title={"Członkowstwo Nike"} data={clubElements} />
         </StyledMain>
     );
 };
