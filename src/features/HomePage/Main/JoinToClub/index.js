@@ -8,7 +8,7 @@ import {
 import { Arrow } from "../../../../common/Arrow";
 import { SliderItems } from "../SliderItems";
 
-export const MainCategoriesSlider = ({ title, data }) => {
+export const JoinToClub = ({ title, data }) => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 

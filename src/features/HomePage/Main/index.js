@@ -5,6 +5,7 @@ import { PopularProducts } from "./PopularProducts";
 import { ProductsBySportName } from "./ProductsBySportName";
 import { MoreProducts } from "./MoreProducts";
 import { Training } from "./Training";
+import { JoinToClub } from "./JoinToClub";
 
 
 export const Main = () => {
@@ -31,7 +32,7 @@ export const Main = () => {
             <MoreProducts title={"Odkryj więcej produktów"} data={moreProducts} />
             <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <Training title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
-            {/* <ArrowSlider title={"Członkowstwo Nike"} /> */}
+            <JoinToClub title={"Członkowstwo Nike"} data={favoriteProducts} />
         </StyledMain>
     );
 };
