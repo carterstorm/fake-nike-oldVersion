@@ -27,13 +27,14 @@ export const MerchMenu = () => {
                     <Heading>{name}</Heading>
                     <List
                         visible={visible}
-                        elements={elements.length}
                     >
                         {elements.map((item, index) => (
                             <Item
+                                visible={visible}
                                 key={index}>
                                 <Link
-                                    href="/">
+                                    visible={visible}
+                                    href="#">
                                     {item}
                                 </Link>
                             </Item>

@@ -26,26 +26,23 @@ export const List = styled.ul`
     transition: .3s;
 
     ${({ visible }) => visible && css`
-        ${({ elements }) => elements && css`
-            height: ${elements * 35}px;
-        `}
+        height: 400px;
     `}
 `;
 
 export const Item = styled.li`
-    height: 25px;
     margin: 0 0 10px 0;
-    overflow: hidden;
+    overflow: ${({ visible }) => !visible && "hidden"};
 `;
 
 export const Link = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.darkGray};
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    white-space: pre-wrap;
+    overflow: ${({ visible }) => !visible && "hidden"};
+    display: ${({ visible }) => !visible && "-webkit-box"};
+    -webkit-box-orient: ${({ visible }) => !visible && "vertical"};
+    -webkit-line-clamp: ${({ visible }) => !visible && "1"};
+    white-space: ${({ visible }) => !visible && "pre-wrap"}; 
     transition: .3s;
     line-height: 25px;
 
