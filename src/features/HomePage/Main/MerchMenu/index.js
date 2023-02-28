@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { merchData } from "./merchData";
 import {
     Category,
     Heading,
@@ -8,104 +10,37 @@ import {
 } from "./styled";
 
 export const MerchMenu = () => {
+    const [visible, setVisible] = useState(false);
+
+    const changeVisibility = () => {
+        setVisible(visible => !visible);
+    };
+
     return (
-        <Wrapper>
-            <Category>
-                <Heading>Buty</Heading>
-                <List>
-                    <Item>
-                        <Link href="/">Buty do golfa</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Zimowe buty sportowe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe z Gore Texu</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe do chodzenia</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Air Max 90 białe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty do podnoszenia cięzarów</Link>
-                    </Item>
-                </List>
-            </Category>
 
-            <Category>
-                <Heading>Buty</Heading>
-                <List>
-                    <Item>
-                        <Link href="/">Buty do golfa</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Zimowe buty sportowe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe z Gore Texu</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe do chodzenia</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Air Max 90 białe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty do podnoszenia cięzarów</Link>
-                    </Item>
-                </List>
-            </Category>
-
-            <Category>
-                <Heading>Buty</Heading>
-                <List>
-                    <Item>
-                        <Link href="/">Buty do golfa</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Zimowe buty sportowe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe z Gore Texu</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe do chodzenia</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Air Max 90 białe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty do podnoszenia cięzarów</Link>
-                    </Item>
-                </List>
-            </Category>
-
-            <Category>
-                <Heading>Buty</Heading>
-                <List>
-                    <Item>
-                        <Link href="/">Buty do golfa</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Zimowe buty sportowe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe z Gore Texu</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty sportowe do chodzenia</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Air Max 90 białe</Link>
-                    </Item>
-                    <Item>
-                        <Link href="/">Buty do podnoszenia cięzarów</Link>
-                    </Item>
-                </List>
-            </Category>
-
+        <Wrapper
+            onMouseEnter={changeVisibility}
+            onMouseLeave={changeVisibility}
+        >
+            {merchData.map(({ id, name, elements }) => (
+                <Category key={id}>
+                    <Heading>{name}</Heading>
+                    <List
+                        visible={visible}
+                        elements={elements.length}
+                    >
+                        {elements.map((item, index) => (
+                            <Item
+                                key={index}>
+                                <Link
+                                    href="/">
+                                    {item}
+                                </Link>
+                            </Item>
+                        ))}
+                    </List>
+                </Category>
+            ))}
         </Wrapper>
     )
 };
