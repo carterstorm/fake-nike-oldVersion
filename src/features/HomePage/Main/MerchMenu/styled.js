@@ -10,7 +10,6 @@ export const Wrapper = styled.section`
 `;
 
 export const Category = styled.div`
-    /* width: 182px; */
 `;
 
 export const Heading = styled.h4`
@@ -31,6 +30,7 @@ export const Link = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.darkGray};
     transition: .3s;
+    line-height: 1.45;
 
     &:hover {
         color: ${({ theme }) => theme.colors.black};
