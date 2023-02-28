@@ -6,6 +6,7 @@ import { ProductsBySportName } from "./ProductsBySportName";
 import { MoreProducts } from "./MoreProducts";
 import { Training } from "./Training";
 import { JoinToClub } from "./JoinToClub";
+import { MerchMenu } from "./MerchMenu";
 
 
 export const Main = () => {
@@ -36,6 +37,7 @@ export const Main = () => {
             <ProductsBySportName title={"Przeglądaj wg dyscypilny sportu"} data={searchBySportData} />
             <Training title={"Trenuj z nami i dbaj o siebie"} data={trainingData} />
             <JoinToClub title={"Członkowstwo Nike"} data={clubElements} />
+            <MerchMenu />
         </StyledMain>
     );
 };
