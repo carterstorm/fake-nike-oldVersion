@@ -20,6 +20,7 @@ export const MotivationHeading = styled.h2`
 
 export const MotivationText = styled.div`
     font-size: 20px;
+    text-align: center;
 `;
 
 export const MotivationQuote = styled.q`
