@@ -11,8 +11,8 @@ import {
 } from "./styled";
 
 export const Slider = () => {
-    const sliderEndPoint = "./data/sliderData.json";
     const [slideIndex, setSlideIndex] = useState(0);
+    const sliderEndPoint = "./data/sliderData.json";
     const data = useData(sliderEndPoint);
     const fetchDataLength = data.fetchData.length;
 
@@ -25,15 +25,14 @@ export const Slider = () => {
     };
 
     return (
-        <Container>
+        <Wrapper>
             <Arrow
                 direction="left"
                 handleClick={handleClick}
             />
-            <Wrapper
+            <Container
                 slideIndex={slideIndex}
             >
-
                 {data.fetchData.map(({ id, image, sliderName }) => (
                     <Slide key={id}>
                         <Image
@@ -46,11 +45,11 @@ export const Slider = () => {
                         </Text>
                     </Slide>
                 ))}
-            </Wrapper>
+            </Container>
             <Arrow
                 direction="right"
                 handleClick={handleClick}
             />
-        </Container >
+        </Wrapper >
     )
 };
