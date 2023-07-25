@@ -21,16 +21,13 @@ export const MotivationHeading = styled.h2`
 export const MotivationText = styled.div`
     font-size: 20px;
     text-align: center;
+    font-weight: 400;
+    margin: 0;
 `;
 
 export const MotivationQuote = styled.q`
-    margin: 0;
-    font-weight: 400;
 `;
 
 export const MotivationCite = styled.cite`
-    margin: 0;
-    font-weight: 400;
-    font-style: italic;
 `;
 
