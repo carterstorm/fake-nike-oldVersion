@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledArrow = styled.button`
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -17,7 +17,7 @@ export const StyledArrow = styled.button`
     opacity: .5;
     border-radius: 50%;
     cursor: pointer;
-    transition: .3;
+    transition: 0.3s;
     transform: translate(0,-50%);
     border: none;
 
