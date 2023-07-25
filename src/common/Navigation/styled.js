@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const StyledNavigation = styled.nav`
+export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;

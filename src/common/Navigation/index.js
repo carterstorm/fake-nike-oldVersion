@@ -2,7 +2,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import { HomePage } from "../../features/HomePage";
 import { Announcment } from "../../common/Announcment";
 import {
-    StyledNavigation,
+    Nav,
     Logo,
     List,
     Item,
@@ -17,27 +17,27 @@ import {
 export const Navigation = () => {
     return (
         <>
-            <StyledNavigation>
+            <Nav>
                 <Logo>#fake_nike.</Logo>
                 <List>
                     <Item>
-                        <StyledNavLink
-                            to={'/homepage'}>Home
+                        <StyledNavLink to={'/homepage'}>
+                            Home
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink
-                            to={'/women'}>Kobiety
+                        <StyledNavLink to={'/women'}>
+                            Kobiety
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink
-                            to={'/men'}>Mężczyźni
+                        <StyledNavLink to={'/men'}>
+                            Mężczyźni
                         </StyledNavLink>
                     </Item>
                     <Item last>
-                        <StyledNavLink
-                            to={'/kids'}>Dzieci
+                        <StyledNavLink to={'/kids'}>
+                            Dzieci
                         </StyledNavLink>
                     </Item>
                 </List>
@@ -54,7 +54,7 @@ export const Navigation = () => {
                         >PL</LanguageButton>
                     </Languages>
                 </NavigationSection>
-            </StyledNavigation >
+            </Nav >
 
             <Announcment />
 
