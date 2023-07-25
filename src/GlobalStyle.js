@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
 
-    .body {
+    #root {
         font-family: 'Lato', sans-serif;
         font-size: 16px;
         font-weight: 400;
