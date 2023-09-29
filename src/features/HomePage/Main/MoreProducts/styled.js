@@ -33,7 +33,7 @@ export const Link = styled.a`
 `;
 
 export const ImageContainer = styled.div`
-
+    width: 31vw;
 `;
 
 export const Image = styled.img`
